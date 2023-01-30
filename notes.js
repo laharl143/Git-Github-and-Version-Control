@@ -144,3 +144,25 @@ $ git merge alien-plot //this is to merge the smaller branch to main
 //now the merge is successful!
 
 $ git push -u origin main //to push local git to remote git
+
+////////////////////////////////////////////////////////////////////////////////////////
+Question: I downloaded the zip file from a repository. Now I did some changes, now I want to push the changes back to the github repo. How do I do it?
+  
+  
+You can't push changes back to a repository from a zip file that you downloaded. 
+
+To push changes to the repository, you need to follow these steps:
+
+Clone the repository: Use the command git clone <repo_url> to clone the repository to your local machine.
+
+Create a new branch: Run git checkout -b <branch_name> to create a new branch for your changes.
+
+Make changes: Make the desired changes to the files in the repository.
+
+Stage the changes: Use git add <file_name> to stage the changes you made.
+
+Commit the changes: Use git commit -m "commit message" to commit the changes.
+
+Push the changes: Use git push origin <branch_name> to push the changes to the remote repository.
+
+Create a Pull Request: Go to the Github repository, you should see an option to create a pull request to merge your changes back to the main branch.
