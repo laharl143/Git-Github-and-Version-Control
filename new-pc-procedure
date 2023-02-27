@@ -45,5 +45,24 @@ $ git checkout -- .
 $ cd C:\Users\erskine.duenas\Desktop\Projects
 
 //then use the clone command (git clone + https)
-git clone https://github.com/LearnWebCode/welcome-to-git.git
+git clone https://github.com/LearnWebCode/travel-site-files.git
+//be sure to name the local repository and remote repository with the same name
 
+
+/////////////// To push local repo to remote repo
+
+//check the origin URL first
+$ git remove -
+origin  https://github.com/LearnWebCode/travel-site-files.git (fetch)
+origin  https://github.com/LearnWebCode/travel-site-files.git (push)
+
+//then set the wanted url
+$ git remote set-url origin https://github.com/laharl143/travel-site.git
+
+//then check again if the origin URL is set as desired
+$ git remote -v
+origin  https://github.com/laharl143/travel-site.git (fetch)
+origin  https://github.com/laharl143/travel-site.git (push)
+
+//now we can push local to remote repo
+$ git push origin master
