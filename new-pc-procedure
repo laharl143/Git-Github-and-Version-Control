@@ -1,0 +1,28 @@
+//Install git 
+
+//check git version
+$ git --version
+
+//configure username and email
+$ git config --global user.name "Erskine Duenas"
+$ git config --global user.email "erskine.duenas@gmail.com"
+
+//go to the working directory
+$ cd (drag and drop a folder)
+
+//check if you you are in the working directory
+$ cd
+
+//make a folder
+$ mkdir "hello-world"
+
+//navigate to the "hello-world" folder
+$ cd hello-world
+
+//init a new git repo
+$ git init
+
+//make a new file ; // echo {nitial content} > {filename.filetype}
+$ echo Hello, World! > index.html 
+
+//add items to the staging area
