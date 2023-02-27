@@ -66,3 +66,25 @@ origin  https://github.com/laharl143/travel-site.git (push)
 
 //now we can push local to remote repo
 $ git push origin master
+
+/////////////// If you want to make changes in the content
+
+*make changes*
+
+//check the status first
+$ git status 
+//if there is a red line, it means new line of code has been changed
+
+//use git add . to add the changes
+$ git add .
+
+//use again the status
+$ git status
+//now the red line has been converted to green line, which means the repo is now ready to be committed 
+
+//now proceed to commit
+$ git commit -m 'Added new meta keywords.'   //sometimes you need to camelCase the message to push through
+
+//now we can push our repo(local) to the github server(remote)
+$ git push origin master
+
